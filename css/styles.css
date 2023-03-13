@@ -201,8 +201,13 @@ img {
 }
 /* =================prices================= */
 .price {
+  background-image: url(../images/price.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 130px;
   padding-bottom: 130px;
+  background-color: rgb(17, 19, 25);
 }
 .price-link {
   color: rgba(157, 164, 189, 0.6);
@@ -225,13 +230,23 @@ img {
 .price-item-link:not(:last-child) {
   margin-bottom: 20px;
 }
+.price-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
 .price-btn {
   display: block;
   margin: 0 auto;
 }
+.price-item.second {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 /* ====================why we============== */
 .why {
-  padding-top: 120px 125px 130px 155px;
+  padding-top: 120px;
+  padding-bottom: 130px;
 }
 .why-box {
   display: flex;
