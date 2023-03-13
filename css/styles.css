@@ -240,6 +240,9 @@ img {
   display: block;
   margin: 0 auto;
 }
+.price-item.first {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
 .price-item.second {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
@@ -382,4 +385,32 @@ img {
 }
 .gallery-text {
   margin-bottom: 44px;
+}
+/* =========================footer========================= */
+.footer-wrapper {
+}
+.footer-wrapper-main {
+  display: flex;
+  background-color: #191c26;
+  flex-grow: 1;
+}
+.contact-wrapper {
+  background-image: url(../images/contact.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 625px;
+  height: 644px;
+}
+.online-wrapper {
+  width: 625px;
+}
+.footer-soc {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.soc {
+  display: flex;
 }

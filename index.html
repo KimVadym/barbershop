@@ -23,13 +23,17 @@
         <nav class="main-nav">
           <a class="logo" href=""><img src="./images/Logo.svg" alt="logo" /></a>
           <ul class="menu">
-            <li class="menu-item"><a class="menu-link" href="#">Про нас</a></li>
             <li class="menu-item">
-              <a class="menu-link" href="#">Послуги та ціни</a>
+              <a class="menu-link" href="#about">Про нас</a>
             </li>
-            <li class="menu-item"><a class="menu-link" href="#">Майстри</a></li>
             <li class="menu-item">
-              <a class="menu-link" href="#">Контакти</a>
+              <a class="menu-link" href="#price">Послуги та ціни</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#team">Майстри</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -74,7 +78,7 @@
             </li>
           </ul>
           <div class="about-box-right">
-            <p class="about-link li-text">ПРО НАС</p>
+            <p class="about-link li-text" id="about">ПРО НАС</p>
             <h2 class="about-title title">Найкращий Барбершоп твого міста</h2>
             <p class="about-if">
               Якщо ти хочеш додати у свій образ більше впевненості, тобі точно
@@ -97,9 +101,9 @@
           <p class="li-text price-link">
             Проведи час у компанії кращих майстрів
           </p>
-          <h2 class="title price-title">Послуги та ціни</h2>
+          <h2 class="title price-title" id="price">Послуги та ціни</h2>
           <div class="price-box">
-            <ul class="price-item">
+            <ul class="price-item first">
               <li class="price-item-link">
                 <p class="price-text">Чоловіча стрижка</p>
                 <p class="price-text">від 300 грн.</p>
@@ -177,7 +181,7 @@
       <section class="team">
         <div class="container">
           <p class="li-text">для справжніх шанувальників атмосфери</p>
-          <h2 class="title">Наші майстри</h2>
+          <h2 class="title" id="team">Наші майстри</h2>
 
           <ul class="team-box">
             <li class="team-item team-overlay">
@@ -335,6 +339,61 @@
           </ul>
         </div>
       </section>
+      <footer>
+        <section>
+          <div class="container footer-wrapper">
+            <div class="footer-wrapper-main">
+              <div class="online-wrapper">
+                <h2>Онлайн-запис</h2>
+                <ul>
+                  <li>
+                    <form action=""><input type="text" /></form>
+                  </li>
+                  <li>
+                    <form action=""><input type="text" /></form>
+                  </li>
+                  <li>
+                    <form action=""><input type="text" /></form>
+                  </li>
+                </ul>
+                <button type="button" class="btn">Надіслати</button>
+              </div>
+              <div class="contact-wrapper">
+                <h2>Контакти</h2>
+                <address>
+                  <ul>
+                    <li><a href="">вул. Василькова, 7А Київ, 08132</a></li>
+                    <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+                    <li>
+                      <a href="tomail:barbershop@email.com"
+                        >barbershop@email.com</a
+                      >
+                    </li>
+                  </ul>
+                </address>
+                <p>часи роботи</p>
+                <p>Щоденно з 9:00 до 22:00</p>
+              </div>
+            </div>
+
+            <div class="footer-soc">
+              <p>Copyright 2020</p>
+              <ul class="soc">
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    >Youtube</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </footer>
     </main>
   </body>
 </html>
