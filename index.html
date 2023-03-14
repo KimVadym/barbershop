@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header-overlay">
@@ -39,7 +40,9 @@
         </nav>
 
         <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="btn" type="button">онлайн-запис</button>
+        <button class="btn" type="button" href="#online-entry">
+          онлайн-запис
+        </button>
       </div>
     </header>
     <main>
@@ -91,7 +94,9 @@
               одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до
               нас приходить!
             </p>
-            <button class="btn" type="button">онлайн-запис</button>
+            <button class="btn" type="button" href="#online-entry">
+              онлайн-запис
+            </button>
           </div>
         </div>
       </section>
@@ -141,7 +146,9 @@
               </li>
             </ul>
           </div>
-          <button class="btn price-btn" type="button">онлайн-запис</button>
+          <button class="btn price-btn" type="button" href="#online-entry">
+            онлайн-запис
+          </button>
         </div>
       </section>
       <!-- why we -->
@@ -339,12 +346,13 @@
           </ul>
         </div>
       </section>
+      <!-- ========================footer=================== -->
       <footer>
         <section>
           <div class="container footer-wrapper">
             <div class="footer-wrapper-main">
               <div class="online-wrapper">
-                <h2>Онлайн-запис</h2>
+                <h2 id="online-entry">Онлайн-запис</h2>
                 <ul>
                   <li>
                     <form action=""><input type="text" /></form>
@@ -358,34 +366,76 @@
                 </ul>
                 <button type="button" class="btn">Надіслати</button>
               </div>
+              <!-- =============right side===================== -->
               <div class="contact-wrapper">
-                <h2>Контакти</h2>
-                <address>
+                <h2 class="title price-title" id="contacts">Контакти</h2>
+                <address class="address">
                   <ul>
-                    <li><a href="">вул. Василькова, 7А Київ, 08132</a></li>
-                    <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-                    <li>
-                      <a href="tomail:barbershop@email.com"
-                        >barbershop@email.com</a
-                      >
+                    <li class="contacts-title">
+                      <div class="map address-icon">
+                        <svg width="24" height="24">
+                          <use href="./images/svg.svg#icon-map-pin"></use>
+                        </svg>
+                        <a
+                          class="contacts-item"
+                          href="https://goo.gl/maps/DFAXjY6BBQe48YoTA"
+                          >вул. Василькова, 7А Київ, 08132</a
+                        >
+                      </div>
+                    </li>
+                    <li class="contacts-title">
+                      <div class="tel address-icon">
+                        <svg width="24" height="24">
+                          <use href="./images/svg.svg#icon-Shape"></use>
+                        </svg>
+                        <a class="contacts-item" href="tel:+380441111111"
+                          >+38 044 111 11 11</a
+                        >
+                      </div>
+                    </li>
+                    <li class="contacts-title">
+                      <div class="email address-icon">
+                        <svg width="24" height="24">
+                          <use href="./images/svg.svg#icon-mail"></use>
+                        </svg>
+                        <a
+                          class="contacts-item email"
+                          href="tomail:barbershop@email.com"
+                          >barbershop@email.com</a
+                        >
+                      </div>
                     </li>
                   </ul>
                 </address>
-                <p>часи роботи</p>
-                <p>Щоденно з 9:00 до 22:00</p>
+                <p class="time">часи роботи</p>
+                <p class="working-time">Щоденно з 9:00 до 22:00</p>
               </div>
             </div>
-
+            <!-- ===========footer bottom============== -->
             <div class="footer-soc">
-              <p>Copyright 2020</p>
+              <div class="copyright">
+                <svg width="12" height="12">
+                  <use href="./images/svg.svg#icon-copyraite"></use>
+                </svg>
+                <p>Copyright 2020</p>
+              </div>
+
               <ul class="soc">
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a
+                    class="soc-net"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Instagram</a
                   >
                 </li>
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"
+                  <a
+                    class="soc-net"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >Youtube</a
                   >
                 </li>
