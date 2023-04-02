@@ -16,13 +16,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header-overlay">
       <div class="container header-box">
         <nav class="main-nav">
-          <a class="logo" href=""><img src="./images/Logo.svg" alt="logo" /></a>
+          <a
+            class="logo"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+            href=""
+            ><img src="./images/Logo.svg" alt="logo"
+          /></a>
           <ul class="menu">
             <li class="menu-item">
               <a class="menu-link" href="#about">Про нас</a>
@@ -39,7 +51,7 @@
           </ul>
         </nav>
 
-        <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
+        <a class="tel menu-item" href="tel:+380441111111">+38 044 111 11 11</a>
         <button class="btn" type="button" href="#online-entry">
           онлайн-запис
         </button>
@@ -49,19 +61,38 @@
       <!-- ====================hero======================= -->
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-left-box">
-            <li>
-              <a href="#" target="_blank" rel="noreferrer noopener"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noreferrer noopener">Youtube</a>
-            </li>
-          </ul>
+          <div class="soc-wrapp">
+            <ul class="hero-left-box">
+              <li class="et">
+                <a
+                  class="soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li class="et">
+                <a
+                  class="soc-link"
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-right-box">
-            <p class="hero-link li-text">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <p
+              class="hero-link li-text animate__animated animate__lightSpeedInRight"
+            >
+              A hair salon for men in Kyiv
+            </p>
+            <h1 class="hero-title animate__animated animate__lightSpeedInRight">
+              BarberShop
+            </h1>
             <p class="hero-link-main">
               Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
               та зі смаком.
@@ -73,10 +104,10 @@
       <section class="about">
         <div class="container about-container">
           <ul class="about-pic">
-            <li>
+            <li class="ro" data-aos="fade-right">
               <img src="./images/img 1.jpg" width="270" height="445" alt="" />
             </li>
-            <li>
+            <li class="ro" data-aos="fade-left">
               <img src="./images/img 2.jpg" width="270" height="445" alt="" />
             </li>
           </ul>
@@ -347,103 +378,126 @@
         </div>
       </section>
       <!-- ========================footer=================== -->
-      <footer>
-        <section>
-          <div class="container footer-wrapper">
-            <div class="footer-wrapper-main">
-              <div class="online-wrapper">
-                <h2 id="online-entry">Онлайн-запис</h2>
+    </main>
+    <footer>
+      <section class="footer-top">
+        <div class="container footer-wrapper">
+          <div class="footer-wrapper-main">
+            <div class="online-wrapper">
+              <h2 id="online-entry" class="form-title">Онлайн-запис</h2>
+              <form class="form-wrap-container">
+                <div class="label-wrapp contact-item">
+                  <input
+                    type="text"
+                    id="name"
+                    class="form-input online-item"
+                    placeholder=" "
+                  />
+                  <label class="form-label" for="name">Ім'я*</label>
+                </div>
+                <div class="label-wrapp contact-item">
+                  <input
+                    type="tel"
+                    id="tel"
+                    class="form-input online-item"
+                    placeholder=" "
+                  />
+                  <label class="form-label" for="tel">Телефон*</label>
+                </div>
+                <div class="label-wrapp label-wrapp-text">
+                  <textarea
+                    class="online-item online-textarea"
+                    name="message"
+                    id="text-a"
+                    placeholder=" "
+                  ></textarea>
+                  <label class="form-label" for="text-a">повідомлення</label>
+                </div>
+
+                <button type="submit" class="btn">Надіслати</button>
+              </form>
+            </div>
+
+            <div class="contact-wrapper">
+              <h2 class="title price-title" id="contacts">Контакти</h2>
+              <address class="address">
                 <ul>
-                  <li>
-                    <form action=""><input type="text" /></form>
+                  <li class="contacts-title">
+                    <div class="map address-icon">
+                      <svg width="24" height="24">
+                        <use href="./images/svg.svg#icon-map-pin"></use>
+                      </svg>
+                      <a
+                        class="contacts-item"
+                        href="https://goo.gl/maps/DFAXjY6BBQe48YoTA"
+                        >вул. Василькова, 7А Київ, 08132</a
+                      >
+                    </div>
                   </li>
-                  <li>
-                    <form action=""><input type="text" /></form>
+                  <li class="contacts-title">
+                    <div class="tel address-icon">
+                      <svg width="24" height="24">
+                        <use href="./images/svg.svg#icon-Shape"></use>
+                      </svg>
+                      <a class="contacts-item" href="tel:+380441111111"
+                        >+38 044 111 11 11</a
+                      >
+                    </div>
                   </li>
-                  <li>
-                    <form action=""><input type="text" /></form>
+                  <li class="contacts-title">
+                    <div class="email address-icon">
+                      <svg width="24" height="24">
+                        <use href="./images/svg.svg#icon-mail"></use>
+                      </svg>
+                      <a
+                        class="contacts-item email"
+                        href="tomail:barbershop@email.com"
+                        >barbershop@email.com</a
+                      >
+                    </div>
                   </li>
                 </ul>
-                <button type="button" class="btn">Надіслати</button>
-              </div>
-              <!-- =============right side===================== -->
-              <div class="contact-wrapper">
-                <h2 class="title price-title" id="contacts">Контакти</h2>
-                <address class="address">
-                  <ul>
-                    <li class="contacts-title">
-                      <div class="map address-icon">
-                        <svg width="24" height="24">
-                          <use href="./images/svg.svg#icon-map-pin"></use>
-                        </svg>
-                        <a
-                          class="contacts-item"
-                          href="https://goo.gl/maps/DFAXjY6BBQe48YoTA"
-                          >вул. Василькова, 7А Київ, 08132</a
-                        >
-                      </div>
-                    </li>
-                    <li class="contacts-title">
-                      <div class="tel address-icon">
-                        <svg width="24" height="24">
-                          <use href="./images/svg.svg#icon-Shape"></use>
-                        </svg>
-                        <a class="contacts-item" href="tel:+380441111111"
-                          >+38 044 111 11 11</a
-                        >
-                      </div>
-                    </li>
-                    <li class="contacts-title">
-                      <div class="email address-icon">
-                        <svg width="24" height="24">
-                          <use href="./images/svg.svg#icon-mail"></use>
-                        </svg>
-                        <a
-                          class="contacts-item email"
-                          href="tomail:barbershop@email.com"
-                          >barbershop@email.com</a
-                        >
-                      </div>
-                    </li>
-                  </ul>
-                </address>
-                <p class="time">часи роботи</p>
-                <p class="working-time">Щоденно з 9:00 до 22:00</p>
-              </div>
-            </div>
-            <!-- ===========footer bottom============== -->
-            <div class="footer-soc">
-              <div class="copyright">
-                <svg width="12" height="12">
-                  <use href="./images/svg.svg#icon-copyraite"></use>
-                </svg>
-                <p>Copyright 2020</p>
-              </div>
-
-              <ul class="soc">
-                <li>
-                  <a
-                    class="soc-net"
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="soc-net"
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Youtube</a
-                  >
-                </li>
-              </ul>
+              </address>
+              <p class="time">часи роботи</p>
+              <p class="working-time">Щоденно з 9:00 до 22:00</p>
             </div>
           </div>
-        </section>
-      </footer>
-    </main>
+        </div>
+      </section>
+
+      <div class="footer-soc container">
+        <div class="copyright">
+          <svg width="12" height="12">
+            <use href="./images/svg.svg#icon-copyraite"></use>
+          </svg>
+          <p>Copyright 2020</p>
+        </div>
+
+        <ul class="soc">
+          <li class="soc-icon">
+            <a
+              class="soc-net"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="soc-icon">
+            <a
+              class="soc-net"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
